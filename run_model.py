@@ -105,12 +105,18 @@ if config.task == 'atsc':
         bos_instruction_ood = instruct_handler.atsc[outdomain]
     delim_instruction = instruct_handler.atsc['delim_instruct']
     eos_instruction = instruct_handler.atsc['eos_instruct']
-if config.task == 'joint':
+# if config.task == 'joint':
+#     t5_exp = T5Generator(model_checkpoint)
+#     bos_instruction_id = instruct_handler.joint[indomain]
+#     if ood_tr_data_path is not None or ood_te_data_path is not None:
+#         bos_instruction_ood = instruct_handler.joint[outdomain]
+#     eos_instruction = instruct_handler.joint['eos_instruct']
+if config.task == 'aspe':
     t5_exp = T5Generator(model_checkpoint)
-    bos_instruction_id = instruct_handler.joint[indomain]
+    bos_instruction_id = instruct_handler.aspe[indomain]
     if ood_tr_data_path is not None or ood_te_data_path is not None:
-        bos_instruction_ood = instruct_handler.joint[outdomain]
-    eos_instruction = instruct_handler.joint['eos_instruct']
+        bos_instruction_ood = instruct_handler.aspe[outdomain]
+    eos_instruction = instruct_handler.aspe['eos_instruct']
 
 if config.mode != 'cli':
     # Define function to load datasets and tokenize datasets
