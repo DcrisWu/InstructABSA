@@ -51,8 +51,8 @@ A sample notebook for training and evluating ATE can be found [here](https://git
 To evaluate the ATE subtask on a single input using CLI run the following:
 ```shell
 python run_model.py -mode cli -task ate \
--model_checkpoint kevinscaria/ate_tk-instruct-base-def-pos-neg-neut-combined \
--test_input 'The cab ride was amazing but the service was pricey'
+-model_checkpoint ./model/ate_tk-instruct-base-def-pos-neg-neut-combined \
+-test_input "The cab ride was amazing but the service was pricey"
 ```
 
 ## Aspect Term Sentiment Classification
@@ -62,13 +62,14 @@ The ATSC models can be trained from scratch or alternatively can be used to run 
 To evaluate the ATSC subtask on a single input using CLI run the following:
 ```shell
 python run_model.py -mode cli -task atsc \
--model_checkpoint kevinscaria/atsc_tk-instruct-base-def-pos-neg-neut-combined \
--test_input 'The ambience was amazing but the waiter was rude|ambience'
+-model_checkpoint ./model/atsc_tk-instruct-base-def-pos-neg-neut-combined \
+-test_input "The ambience was amazing but the waiter was rude|ambience"
 ```
 Note the ```|``` delimiter that is used to pass the aspect term for which the polarity is to be extracted.
 
 
 ## Joint Tasks
+## Aspect Sentiment Pair Extraction
 
 The Joint task models can be trained from scratch or alternatively can be used to run inference on your datasets directly. This can be done through CLI (check the [Scripts](https://github.com/kevinscaria/InstructABSA/tree/main/Scripts) folder) or by adapting your code similar to run_model.py. An example shell command to run inference on individual samples is shown below.
 
@@ -76,9 +77,9 @@ A sample notebook for training and evluating Joint Task can be found [here](http
 
 To evaluate the Joint Task on a single input using CLI run the following:
 ```shell
-python run_model.py -mode cli -task joint \
--model_checkpoint kevinscaria/joint_tk-instruct-base-def-pos-neg-neut-combined \
--test_input 'The cab ride was amazing but the service was pricey'
+python run_model.py -mode cli -task aspe \
+-model_checkpoint ./model/joint_tk-instruct-base-def-pos-neg-neut-combined \
+-test_input "The cab ride was amazing but the service was pricey"
 ```
 ## Aspect Based Opinion Extraction ⬆️
 
