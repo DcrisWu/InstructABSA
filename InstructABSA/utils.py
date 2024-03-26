@@ -15,7 +15,7 @@ class T5Generator:
         self.tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint)
         self.data_collator = DataCollatorForSeq2Seq(self.tokenizer)
-        self.device = 'cuda' if torch.has_cuda else ('mps' if torch.has_mps else 'cpu')
+        self.device = 'cuda' if torch.backends.cuda.is_built() else ('mps' if torch.backends.mps.is_built() else 'cpu')
 
     def tokenize_function_inputs(self, sample):
         """
