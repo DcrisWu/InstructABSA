@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/ate_tk-instruct-base-def-pos-laptops" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/ate_tk-instruct-base-def-pos-neg-neut-combined" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/ate_tk-instruct-base-def-pos-neg-neut-laptops" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/ate_tk-instruct-base-def-pos-neg-neut-restaurants" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/ate_tk-instruct-base-def-pos-restaurants" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/atsc_tk-instruct-base-def-pos-laptops" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/atsc_tk-instruct-base-def-pos-neg-neut-combined" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/atsc_tk-instruct-base-def-pos-neg-neut-laptops" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/atsc_tk-instruct-base-def-pos-neg-neut-restaurants" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/atsc_tk-instruct-base-def-pos-restaurants" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/joint_tk-instruct-base-def-pos-neg-neut-combined" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/model/tk-instruct-base-def-pos" vcs="Git" />
+  </component>
+</project>

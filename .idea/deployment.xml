@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cike@202.38.247.164:2099 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="cike@202.38.247.164:2099 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wsd/InstructABSA" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cike@202.38.247.164:2099 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/cike/wsd/InstructABSA" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
